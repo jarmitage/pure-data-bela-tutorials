@@ -2,7 +2,7 @@
 #X floatatom 95 343 5 0 0 0 - - -, f 5;
 #X floatatom 93 93 5 0 0 0 - - -, f 5;
 #X obj 95 365 res-model-loader;
-#X msg 304 211 modelhanddrum.coll modelharmonic.coll modelmarimba.coll
+#X msg 504 223 modelhanddrum.coll modelharmonic.coll modelmarimba.coll
 modelmetallic.coll;
 #X obj 95 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -23,11 +23,16 @@ modelmetallic.coll;
 #X obj 363 247 loadbang;
 #X obj 304 189 loadbang;
 #X text 304 172 defaults (loadbang in reverse order);
+#X msg 305 339 indian-roots_Chakoa-8.coll indian-roots_Chakoa-9.coll
+indian-roots_Dhalki-2.coll indian-roots_Duggi-4.coll indian-roots_Hand-Dhal.coll
+indian-roots_khol.coll indian-roots_Madal.coll indian-roots_Manjeera-1.coll
+indian-roots_Mirdangam-1.coll indian-roots_Mirdangam-4.coll indian-roots_Mirdangam-15.coll
+indian-roots_Mirdangam-low-1.coll indian-roots_Stick-Dhal-1.coll indian-roots_Stick-Dhal-8.coll
+;
 #X connect 0 0 2 0;
 #X connect 1 0 2 1;
 #X connect 1 0 4 0;
 #X connect 2 0 5 0;
-#X connect 3 0 2 2;
 #X connect 4 0 0 0;
 #X connect 6 0 0 0;
 #X connect 7 0 9 0;
@@ -37,4 +42,5 @@ modelmetallic.coll;
 #X connect 11 0 0 0;
 #X connect 13 0 2 2;
 #X connect 17 0 10 0;
-#X connect 18 0 3 0;
+#X connect 18 0 20 0;
+#X connect 20 0 2 2;
